@@ -1,0 +1,335 @@
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+#header {
+  width: 100%;
+  background-color: #22313f;
+  height: 50px;
+  position: fixed;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0ebe8;
+  z-index: 1;
+}
+#logo {
+  display: inline-block;
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+  float: left;
+}
+/* logo image hidden for now */
+#header-img {
+  height: 40px;
+  margin: 5px;
+  float: left;
+}
+#logo-txt {
+  font-size: 40px;
+  display: inline-block;
+  float: left;
+  color: white;
+}
+#dev-txt {
+  font-family: 'Shrikhand', cursive;
+  letter-spacing: 2.5px;
+}
+#box-txt {
+  font-family: 'Black Ops One', cursive;
+}
+/* nav bar */
+#nav-bar {
+  margin: 30px 0;
+  margin-top: 25px;
+  float: right;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+}
+.nav-link {
+  font-size: 18px;
+  color: white;
+  padding: 10px 30px;
+}
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+.nav-link:hover,
+.active {
+  background-color: #92b9af;
+}
+
+#hero {
+  top: 0;
+  background: #e0ebe8;
+  min-height: 45vh;
+  padding-top: 20vh;
+}
+h3 {
+  color: #24990a;
+  font-family: 'Teko', sans-serif;
+  font-size: 50px;
+  text-shadow: 1px 1px 1px black;
+}
+p,
+form {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.strong {
+  font-weight: bold;
+}
+button {
+  display: block;
+  margin: 0 auto;
+}
+#hero img {
+  width: 250px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+#inside,
+#subscribe,
+#pricing {
+  padding-top: 70px;
+  margin-top: -70px;
+}
+button,
+#submit {
+  font-size: 24px;
+  padding: 5px 15px;
+  background-color: red;
+  border: 0;
+  margin: 20px auto;
+  border-radius: 50px;
+  box-shadow: 1px 1px 1px #808785;
+  vertical-align: top;
+  display: block;
+  outline: none;
+}
+button,
+button:hover,
+button:focus,
+button a,
+button a:hover,
+button a:focus,
+#submit,
+#submit:hover,
+submit:focus {
+  text-decoration: none;
+  color: white;
+}
+/* end of hero */
+
+/* what's inside section */
+#grid-container {
+  max-width: 80%;
+  margin: 30px auto 50px auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto;
+}
+.grid-item img {
+  width: 100px;
+  padding: 0 10px;
+}
+.grid-item p {
+  text-align: center;
+  font-size: 16px;
+  width: 120px;
+  margin: 0 auto;
+}
+/* end of what's inside */
+
+/* pricing section */
+.striked {
+  color: #585858;
+  text-decoration: line-through;
+  padding-left: 20px;
+  font-size: 18px;
+}
+#number {
+  height: 24px;
+  font-size: 18px;
+  width: 50px;
+  padding-left: 10px;
+}
+#number:focus {
+  outline: none;
+}
+hr {
+  width: 90%;
+  margin: 0 auto;
+}
+.purchase-ideas {
+  text-align: left;
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px 30px 20px;
+}
+.purchase-ideas img {
+  padding-top: 20px;
+  width: 30px;
+  display: inline-block;
+}
+.purchase-ideas h4 {
+  vertical-align: middle;
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.purchase-ideas p {
+  font-size: 16px;
+}
+/* end of pricing */
+
+/* subscribe */
+#email {
+  height: 24px;
+  font-size: 18px;
+  width: 200px;
+  padding: 0 0 0 10px;
+}
+#email:focus {
+  outline: none;
+}
+form {
+  padding: 20px 0;
+}
+#vid {
+  margin: 20px 0 50px 0;
+}
+/* end of subscribe */
+
+#credit {
+  padding: 8px 0;
+  margin: 0;
+  font-size: 12px;
+  background: #22313f;
+  color: white;
+}
+#credit a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  #header {
+    position: absolute;
+  }
+  #header-img {
+    display: none;
+  }
+  #logo {
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+  #logo-txt {
+    float: none;
+    margin: 0 auto;
+  }
+  #nav-bar {
+    min-width: 200px;
+    background-color: #22313f;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1px;
+    flex-direction: column;
+  }
+  .nav-link {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+  }
+  #hero {
+    padding-top: 220px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  p,
+  form {
+    font-size: 18px;
+  }
+  button,
+  input {
+    font-size: 18px;
+  }
+  #hero img {
+    padding-bottom: 10px;
+  }
+  #inside,
+  #subscribe,
+  #pricing {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  #pricing {
+    background-color: #e0ebe8;
+    padding-bottom: 10px;
+  }
+  p,
+  h3,
+  form {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #grid-container {
+    width: 95%;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    justify-content: center;
+  }
+  .grid-item img {
+    width: 60px;
+    padding: 0;
+  }
+  .grid-item p {
+    font-size: 14px;
+  }
+  .purchase-ideas {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .purchase-ideas h4 {
+    margin-left: 0;
+  }
+  #video {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  #hero img {
+    width: 80%;
+  }
+  h3 {
+    line-height: 1em;
+    padding-top: 10px;
+  }
+  #grid-container {
+    grid-template-columns: auto auto;
+  }
+  p,
+  h3,
+  form {
+    width: 80%;
+  }
+}
